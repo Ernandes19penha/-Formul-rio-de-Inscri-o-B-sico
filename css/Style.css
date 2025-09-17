@@ -1,0 +1,107 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonte base */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #000000;
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Container principal */
+.form-container {
+    background: #5a5959;
+    padding: 40px;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos */
+.form-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #bec3c9;
+    text-align: center;
+}
+
+.form-subtitle {
+    font-size: 15px;
+    color: #9adadf;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Grupo de campos */
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels */
+label {
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="email"] {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: border 0.3s ease;
+    font-size: 14px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* Botão */
+.submit-button {
+    width: 100%;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #2980b9;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+    .form-container {
+        padding: 30px 20px;
+    }
+
+    .form-title {
+        font-size: 20px;
+    }
+
+    .form-subtitle {
+        font-size: 13px;
+    }
+}
+
+
